@@ -1,7 +1,10 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+
+Name : KARTHIKEYAN R
+
+Roll no : 212222240045
+
+Date of experiment : 30/8/2024
 
 
 
@@ -78,24 +81,131 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
+```
+org 100h
+
+mov al,0046h 
+mov bl,0056h
+add al,bl
+mov [6366h],al
+
+ret
+```
 
 
+## Output :
 
-## Output  
+![image](https://github.com/user-attachments/assets/837bd3f1-55ea-41af-949d-5828b67c17af)
+
+
  
 ## Subtraction   of 8 bit numbers  ALP 
- 
+ ```
+org 100h
+
+mov ax,0046h 
+mov bx,0056h
+sub ax,bx;
+mov [6378h],ax
+
+ret
+```
+
 ## Output  
+
+![image](https://github.com/user-attachments/assets/b897c325-56b8-41ea-b95b-ab2f855a30b6)
+
 ## Multiplication alp 
+```
+org 100h
+
+mov ax,0046h 
+mov bx,0056h
+mul bx;
+mov [6367h],ax
+
+ret
+```
  ## Output  
+
+ ![image](https://github.com/user-attachments/assets/4f23115c-d3fa-4c32-a9ae-ab877245b2fa)
+
 
 
 ## Division alp 
+```
+org 100h
 
-## Output  
+mov ax,0046h 
+mov bx,0056h
+div bx;
+mov [6355h],bx
+
+ret
+```
+
+## Output 
+
+![image](https://github.com/user-attachments/assets/0ab714f9-98ff-4925-9a84-3ffecdc7c1ef)
+
+# OR Operation
+```
+org 100h
+
+mov ax,0046h 
+mov bx,0056h
+or ax,bx
+
+ret
+```
+### OUTPUT
+
+![image](https://github.com/user-attachments/assets/2f45fc9b-9299-472c-a13f-eef85528fd00)
+
+# AND Operation
+```
+org 100h
+
+mov ax,0046h 
+mov bx,0056h
+and ax,bx
+
+ret
+```
+### Output
+
+![image](https://github.com/user-attachments/assets/5b999cec-5a61-4b14-a759-6278c211b229)
+
+# NOT Operation
+```
+org 100h
+
+mov ax,0046h 
+not ax
+
+ret
+```
+#### Output
+
+![image](https://github.com/user-attachments/assets/89eb6c26-1816-42f9-a353-d7a8b231c86e)
+
+# XOR Operation
+```
+org 100h
+
+mov ax,0046h 
+mov bx,0056h
+xor ax,bx
+
+ret
+```
+### Output
+
+![image](https://github.com/user-attachments/assets/fa5a9cac-b0b7-418f-8e1c-4344b156303e)
 
 
-## Result :
+
+## Result : Thus, ALP for fundamental arithmetic and logical operations are executed successfully
  
 
 
